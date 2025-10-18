@@ -6,19 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /**
+     * Ejecuta las migraciones.
+     */
     public function up(): void
     {
         Schema::create('logins', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->timestamp('fecha_login')->useCurrent();
+            $table->string('usuario');
             $table->string('ip')->nullable();
+            $table->timestamp('fecha_login')->useCurrent();
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
+    /**
+     * Revierte las migraciones.
+     */
     public function down(): void
     {
         Schema::dropIfExists('logins');

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Proyecto Enfermedades</title>
+  <title>Proyecto pacientes</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -17,7 +17,7 @@
 
     h1 {
       font-size: 2.8em;
-      background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffff, #ff00cc);
+      background: linear-gradient(270deg, #1fa51bff, #fcff33ff, #ff00c8ff, #ff00cc);
       background-size: 600% 600%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -49,11 +49,11 @@
 
     .menu a {
       padding: 12px 20px;
-      background: #1d1a40ff;
+      background: #401a3eff;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(173, 26, 26, 0.5);
+      box-shadow: 0 4px 6px rgba(145, 209, 26, 0.5);
       transition: transform 0.3s ease, background 0.3s ease;
       font-size: 1.1em;
       opacity: 0;
@@ -66,7 +66,7 @@
     .menu a:nth-child(3) { animation-delay: 0.9s; }
 
     .menu a:hover {
-      background: #3f3fff;
+      background: #fff23fff;
       transform: scale(1.05);
     }
 
@@ -74,7 +74,7 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #1a1a40;
+      background: #40391aff;
       color: white;
       border: none;
       padding: 10px 15px;
@@ -126,7 +126,7 @@
 <body>
   <canvas id="galaxia"></canvas>
 
-  <h1>🌌 Bienvenido al Proyecto Enfermedades 🌌</h1>
+  <h1>🌌 Bienvenido al Proyecto de Pacientes🌌</h1>
   <img id="avatar" src="https://api.dicebear.com/7.x/adventurer/svg?seed=Jean" alt="Avatar animado">
   <p>Este prototipo incluye:</p>
   <ul>
